@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, FlatList, View, Modal, Text, Button } from "react-native";
 import axios from "axios";
-
+import HeartButton from "./buttons/HeartButton";
 class QuoteAndAuthor extends Component {
   constructor(props) {
     super(props);
@@ -47,6 +47,7 @@ class QuoteAndAuthor extends Component {
           <View style={styles.fontArea}>
             <Text style={styles.quoteBox}>{quote}</Text>
             <Text style={styles.author}>{author}</Text>
+            <HeartButton/>
           </View>
         </View>
         <View style={styles.buttonContainer}>
